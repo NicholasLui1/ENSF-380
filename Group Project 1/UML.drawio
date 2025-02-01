@@ -1,0 +1,46 @@
+<mxfile host="65bd71144e">
+    <diagram id="AqVTZ348Kh1Y_feLJiZJ" name="Page-1">
+        <mxGraphModel dx="519" dy="766" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="6" value="Person" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="30" width="640" height="360" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="- name: String&#10;- dateAdmitted: String = &quot;Unknown&quot;&#10;- location: String = &quot;Unknown&quot;&#10;- injuries: String[] = &quot;None or unknown&quot;&#10;- knownHealthConditions: String[] = &quot;None&quot;&#10;- relationships: String[]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="6">
+                    <mxGeometry y="26" width="640" height="104" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="6">
+                    <mxGeometry y="130" width="640" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="+ Person()&#10;+ Person(name: String, dateAdmitted: String, injuries: String[], knownHealthConditions: String[], relationships: String[])&#10;+ setName(name: String[]): void&#10;+ setDateAdmitted(dateAdmitted: String): void&#10;+ setLocation(location: String): void&#10;+ setInjuries(injuries: String[]): void&#10;+ setKnownHealthConditions(knownHealthConditions: String[]): void&#10;+ setRelationships(relationships: String[]): void&#10;+ getName(): String&#10;+ getDateAdmitted(): String&#10;+ getLocation(): String&#10;+ getInjuries(): String[]&#10;+ getKnownHealthConditions(): String[]&#10;+ getRelationships(): String[]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="6">
+                    <mxGeometry y="138" width="640" height="222" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Child" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="420" width="650" height="390" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="- baseInfo: Person&#10;- age: int&#10;- height: int = &quot;Unknown&quot;&#10;- weight: int = &quot;Unknown&quot;&#10;- appearance: String[]&#10;- behaviours: String[] = &quot;None&quot;&#10;- socialWorkerId: int = &quot;Unknown&quot;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="11">
+                    <mxGeometry y="26" width="650" height="114" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="11">
+                    <mxGeometry y="140" width="650" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="+ Child()&#10;+ Child(baseInfo: Person, age: int, height: int, weight: int, appearance: String[], behaviours: String[], socialWorkerId: int)&#10;+ setBaseInfo(baseInfo: Person): void&#10;+ setAge(age: int): void&#10;+ setHeight(height: int): void&#10;+ setWeight(weight: int): void&#10;+ setAppearance(appearance: String[]): void&#10;+ setBehaviours(behaviours: String[]): void&#10;+ setSocialWorkerId(socialWorkerId: int): void&#10;+ getBaseInfo(): Person&#10;+ getAge(): int&#10;+ getHeight(): int&#10;+ getWeight(): int&#10;+ getAppearance(): String[]&#10;+ getBehaviours(): String[]&#10;+ getSocialWorkerId(): int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="11">
+                    <mxGeometry y="148" width="650" height="242" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="DispatchCentre" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="830" width="460" height="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="- inquiryDate: String&#10;- name: String&#10;- searchingFor: String[]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="15">
+                    <mxGeometry y="26" width="460" height="54" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="15">
+                    <mxGeometry y="80" width="460" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="+ DispatchCentre()&#10;+ DispatchCentre(inquiryDate: String, name: String, searchingFor: String[])&#10;+ setInquiryDate(inquiryDate: String): void&#10;+ setName(name: String): void&#10;+ setSearchingFor(searchingFor: Sting[]): void&#10;+ getInquiryDate(): String&#10;+ getName(): String&#10;+ getSearchingFor(): String[]&#10;+ searchPerson(searchingFor: String[]): String[]&#10;+ searchChild(searchingFor: String[]): String[]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="15">
+                    <mxGeometry y="88" width="460" height="162" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
